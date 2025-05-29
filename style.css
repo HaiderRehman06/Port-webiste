@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #d9bfa8;
+}
+
+body {
+    background-color: #d9bfa8;
+    padding: 0;
+}
+
+.container {
+  padding: 1%;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.item {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 0.5em;
+  background-color: #434a38;
+  font-weight: 700;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(9,1fr );
+    grid-template-rows: repeat(7,1fr);
+}
+
+.item-1{
+    grid-area: 1/1/5/5;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: xx-large;
+    letter-spacing: 1px;
+
+        i{
+            font-weight: 100;
+            font-family: "Julee", cursive;
+        }
+        h2{
+            margin: 0 0 0 10%;
+        }
+}
+
+.item-2{
+    background-color: #242619;
+    grid-area: 1/5/5/7;
+    background-image: url(./assets/enchace.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-3{
+    grid-area: 1/7/7/10;
+    overflow-y: auto;
+        h1{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: -20px;
+            font-family: 'Julee', cursive;
+            font-style: italic;
+            letter-spacing: 3px;
+        }
+}
+
+.item-4{
+    grid-area: 5/1/8/4;
+    
+    p{
+        margin: 5%;
+        letter-spacing: 2px;
+        font-size: larger;
+        font-weight: 500;
+        line-height: 1.5;
+
+        font-family: 'Julee', cursive;
+        margin-top: 30%;
+    }
+}
+
+.item-5{
+    background-color: #94704d;
+    grid-area: 5/4/8/7;
+}
+
+.item-6{
+    grid-area: 7/7/8/10;
+    
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5%;
+        a{
+            text-decoration: none;
+            font-size: larger;
+        }
+}
+
+.main{
+    background-color: #434a38;
+    margin: 2%;
+    padding: 1%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+        a{
+            text-decoration:none;
+            padding-inline: 10px;
+            font-family: 'Caveat', cursive;
+            font-size: xx-large;
+        }
+}
+
+.main  p  {
+    letter-spacing: 2px;
+
+        span{
+            font-family: 'Caveat', cursive;
+            color: white;
+            font-size: xx-large;
+        }
+}
+
+.Project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 4%;
+    margin-top: 11%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #94704d;
+
+        img{
+            width: 200px;
+            height: 100px;
+        }
+        a{
+            text-decoration: none;
+        }
+}
+#prj {
+    text-decoration: none;
+
+        button{
+            background-color: transparent;
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+            height: 60px;
+            margin-top: 8%;
+            border-radius: 30px;
+            border: 2px solid #d9bfa8;
+            font-size: larger;
+        }
+}
+
+
+
+/* Mobile responsive media quieries */
+
+@media screen and (max-width:420px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .conatiner{
+        grid-template-columns: repeat(9,1fr );
+        grid-template-rows: repeat(,1fr);
+    }
+    
+    .item-1{
+        grid-area:1/1/5/5;
+    }
+    .item-2{
+        grid-area: 1/5/5/9;
+    }
+    .item-3{
+        grid-area: 5/1/8/10;
+    }
+}
+
