@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #333;
+    background-color: #a4cdff;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+        button{
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: 1px solid;
+            font-size: large;
+        }
+        button:hover{
+                background-color: #e0e0e0;
+                cursor: pointer;
+                transition:all 0.5s ease-in-out;
+            }
+}
+header h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+    font-family: 'julee', cursive;
+}
+#project-list{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+
+    img{
+        width: 500px;
+        height: 250px;
+    }
+}
+#project-list div{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
