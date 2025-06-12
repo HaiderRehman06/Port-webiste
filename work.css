@@ -6,7 +6,7 @@
 }
 body{
     color: #333;
-    background-color: #a4cdff;
+    background-color: #455133;
 }
 
 .btn{
@@ -15,7 +15,7 @@ body{
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #d9bfa8;
     border: 1px solid #ccc;
     border-radius: 5px;
         button{
@@ -31,27 +31,94 @@ body{
             }
 }
 header h1{
+    color: white;
     text-align: center;
     font-size: 2.5em;
     margin: 20px 0;
     font-family: 'julee', cursive;
 }
-#project-list{
-    text-align: center;
+/* ...existing code... */
+
+#project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
     padding: 20px;
-    gap: 20px;
-
-    img{
-        width: 500px;
-        height: 250px;
-    }
+    background: transparent;
 }
-#project-list div{
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
+
+#project-list div {
+
+    background: #94704d;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 20px 15px 15px 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-list div:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+#project-list img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#project-list h2 {
+    font-size: 1.2em;
+    margin: 10px 0 8px 0;
+    font-family: 'Julee', cursive;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#project-list p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#project-list a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 8px 18px;
+    background: #a4cdff;
+    color: #222;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+    font-size: 1em;
+}
+
+#project-list a:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* Responsive styles for phones */
+@media (max-width: 600px) {
+    #project-list {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 10px;
+    }
+    #project-list div {
+        width: 250px;
+    }
+    #project-list h2 {
+        font-size: 1em;
+    }
+    #project-list p, #project-list a {
+        font-size: 0.95em;
+    }
 }
