@@ -41,7 +41,6 @@ body {
     align-items: center;
     font-size: xx-large;
     letter-spacing: 1px;
-    animation:slideright 1s linear;
 
         i{
             font-weight: 100;
@@ -58,14 +57,12 @@ body {
     background-image: url(./assets/enchace.png);
     background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
-    animation: fade-in 1s linear;
+    background-repeat: no-repeat
 }
 
 .item-3{
     grid-area: 1/7/7/10;
-    overflow-y: auto;
-    animation: slide-left 1s linear;
+    overflow-y: auto
 }
 .item-3 > h1{
             text-align: center;
@@ -77,7 +74,6 @@ body {
 }
 .item-4{
     grid-area: 5/1/8/4;
-    animation: slide-up 1s linear;
     
     p{
         margin: 5%;
@@ -85,7 +81,6 @@ body {
         font-size: larger;
         font-weight: 500;
         line-height: 1.5;
-
         font-family: 'Julee', cursive;
         margin-top: 30%;
     }
@@ -93,13 +88,11 @@ body {
 
 .item-5{
     background-color: #94704d;
-    grid-area: 5/4/8/7;
-    animation: slide-up 1.4s linear;
+    grid-area: 5/4/8/7
 }
 
 .item-6{
-    grid-area: 7/7/8/10;
-    animation: slide-down 1.5s linear;
+    grid-area: 7/7/8/10
     
 }
 
@@ -122,8 +115,6 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    animation: fade-in 1s linear;
-
         a{
             text-decoration:none;
             padding-inline: 10px;
@@ -262,67 +253,4 @@ body {
   }
 
 
-  /* Animation  */
-   @keyframes slidedown {
-    from {
-        transform: translateY(-80%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-} 
-
-@keyframes slideright {
-    from {
-        transform: translateX(-80%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-up {
-    from {
-        transform: translateY(80%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-left {
-    from {
-        transform: translateX(40%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-down {
-    from {
-        transform: translateY(-30%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+  

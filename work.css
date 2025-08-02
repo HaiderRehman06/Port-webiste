@@ -8,7 +8,6 @@ body{
     color: #333;
     background-color: #455133;
 }
-
 .btn{
     display: flex;
     justify-content: space-between;
@@ -37,7 +36,6 @@ header h1{
     margin: 20px 0;
     font-family: 'julee', cursive;
 }
-/* ...existing code... */
 
 #project-list {
     display: flex;
@@ -106,6 +104,7 @@ header h1{
 }
 
 /* Responsive styles for phones */
+
 @media (max-width: 600px) {
     #project-list {
         flex-wrap: wrap;
